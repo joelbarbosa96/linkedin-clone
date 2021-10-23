@@ -1,18 +1,35 @@
 import React from "react";
+import HeaderOption from "./HeaderOption";
 import "./Header.css";
+import SearchIcon from "@material-ui/icons/Search";
+import HomeIcon from "@material-ui/icons/Home";
+import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import ChatIcon from "@material-ui/icons/Chat";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+//TODO IMPORTS BY NAMING ORDER
 function Header() {
   return (
     <div className="header">
-      <h1>This is the Header</h1>
       <div className="header__left">
-        <img src="" alt="" />
+        <img
+          src="https://img.icons8.com/fluency/48/000000/linkedin.png"
+          alt=""
+        />
 
         <div className="header__search">
-          {/* SearchIcon */}
+          <SearchIcon />
           <input type="text" />
         </div>
       </div>
-      <div className="header__right"></div>
+      <div className="header__right">
+        <HeaderOption Icon={HomeIcon} title="Home" />
+        <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
+        <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
+        <HeaderOption Icon={ChatIcon} title="Messaging" />
+        <HeaderOption Icon={NotificationsIcon} title="Notifications" />
+        <HeaderOption avatar="https://i.pravatar.cc/150?img=3" title="Me" />
+      </div>
     </div>
   );
 }
