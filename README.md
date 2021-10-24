@@ -4,3 +4,4 @@
 **Framework:** React\
 **State Manaagement:** Redux\
 **Styling:** Material UI
+**Database/Auth:** Firebase
