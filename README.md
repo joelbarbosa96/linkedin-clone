@@ -3,4 +3,5 @@
 **Language:** JavaScript\
 **Framework:** React\
 **State Manaagement:** Redux\
-**Styling:** Material UI
+**Styling:** Material UI\
+**Database/Auth:** Firebase
